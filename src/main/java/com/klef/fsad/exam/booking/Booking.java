@@ -1,0 +1,50 @@
+package com.klef.fsad.exam.booking;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="booking")
+public class Booking 
+{
+    @Id
+    private Integer bookingId;
+    private String name;
+    private String date;
+    private String status;
+
+    public Booking() {}
+
+    public int getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(int bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+}
